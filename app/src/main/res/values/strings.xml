@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Studyt!</string>
+    <string name="logo">Welcome to Studyt!</string>
+    <string name="welcome">You are new here? Create your own account or login via social networks and get started!</string>
+    <string name="username_hint">Username:</string>
+    <string name="username_password">Password:</string>
+    <string name="get_started">GET STARTED!</string>
+</resources>
