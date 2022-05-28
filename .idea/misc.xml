@@ -3,10 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Studyt/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/home_icon.xml" value="0.217" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/ic_baseline_library_books_24.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/ic_home_background.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/ic_home_foreground.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/drawable/messenger.xml" value="0.2645" />
+        <entry key="..\:/Studyt/app/src/main/res/layout/activity_discs.xml" value="0.16" />
         <entry key="..\:/Studyt/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
         <entry key="..\:/Studyt/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Studyt/app/src/main/res/layout/activity_messenger.xml" value="0.16394927536231885" />
         <entry key="..\:/Studyt/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/Studyt/app/src/main/res/layout/activity_register_user.xml" value="0.1" />
+        <entry key="..\:/Studyt/app/src/main/res/layout/activity_register_user.xml" value="0.2" />
       </map>
     </option>
   </component>

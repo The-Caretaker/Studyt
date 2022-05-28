@@ -1,104 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity"
     android:background="@color/grayDarcula"
-    >
+    android:visibility="visible"
+    tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/candal"
+            android:foregroundGravity="center_vertical|center"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="8sp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#B388FF"
+            android:textSize="30sp"
+            android:typeface="normal"></TextView>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:id="@+id/greeting"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
-        />
+        android:layout_below="@+id/appbar"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/emailAddressTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email Address:"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/greeting"
-        app:layout_constraintLeft_toLeftOf="@id/greeting"
+        android:layout_below="@+id/greeting"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:text="Email Address:"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/emailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/emailAddressTitle"
-        app:layout_constraintLeft_toLeftOf="@id/emailAddressTitle"
-        android:layout_marginLeft="30dp"
-        android:textSize="20sp"
-        />
+        android:layout_below="@+id/greeting"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/emailAddressTitle"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/fullNameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/emailAddressTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:text="Full Name:"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/emailAddress"
-        app:layout_constraintLeft_toLeftOf="@id/greeting"
-        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/fullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/fullNameTitle"
-        app:layout_constraintLeft_toLeftOf="@id/emailAddressTitle"
-        android:layout_marginLeft="30dp"
-        android:textSize="20sp"
-        />
+        android:layout_below="@+id/emailAddressTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/fullNameTitle"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/ageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/fullNameTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:text="Age:"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/fullName"
-        app:layout_constraintLeft_toLeftOf="@id/fullNameTitle"
-        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/ageTitle"
-        app:layout_constraintLeft_toLeftOf="@id/fullNameTitle"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:layout_below="@+id/fullNameTitle"
+        android:layout_toEndOf="@+id/ageTitle"
         />
+
 
     <Button
         android:id="@+id/signOut"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:textStyle="bold"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="50sp"
         android:backgroundTint="#0ED689"
+        android:text="Logout"
         android:textColor="#ffff"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_700">
+
+        <ImageButton
+            android:id="@+id/Discs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/purple_700"
+            app:srcCompat="@drawable/ic_baseline_library_books_24"
+            app:tint="@color/purple_500" />
+
+        <ImageButton
+            android:id="@+id/Messenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:background="@color/purple_700"
+            app:srcCompat="@drawable/ic_home_foreground"
+            app:tint="@color/purple_500" />
+
+        <ImageButton
+            android:id="@+id/Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginVertical="10dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/purple_700"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            app:tint="@color/purple_500" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,10 @@ public class ProfileActivity extends AppCompatActivity {
     private String userID;
 
     private Button logout;
+
+    private ImageButton disciplines;
+
+    private ImageButton messenger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,9 +76,22 @@ public class ProfileActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(ProfileActivity.this, "Something wronge happened", Toast.LENGTH_LONG).show();
+                Toast.makeText(ProfileActivity.this, "Something wrong happened", Toast.LENGTH_LONG).show();
             }
         });
-
+        disciplines = (ImageButton) findViewById(R.id.Discs);
+        disciplines.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, discs.class));
+            }
+        });
+        messenger = (ImageButton) findViewById(R.id.Messenger);
+        messenger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, messenger.class));
+            }
+        });
     }
 }

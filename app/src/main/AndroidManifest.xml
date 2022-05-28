@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Studyt">
         <activity
+            android:name=".messenger"
+            android:exported="false" />
+        <activity
+            android:name=".discs"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
