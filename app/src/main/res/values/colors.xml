@@ -7,6 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="grayDarcula">#333</color>
     <color name="lightgrayDarcula">#555</color>
+    <color name="darkgrayDarcula">#222</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="unreal">#0f1229</color>
+    <color name="unity">#3d243c</color>
 </resources>

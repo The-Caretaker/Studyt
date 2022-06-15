@@ -67,7 +67,7 @@ public class ProfileActivity extends AppCompatActivity {
                     String email = userProfile.email;
                     String age = userProfile.age;
 
-                    greetingTextView.setText("Welcome, " + fullName + "!");
+                    greetingTextView.setText("Welcome, " + fullName);
                     fullNameTextView.setText(fullName);
                     emailTextView.setText(email);
                     ageTextView.setText(age);

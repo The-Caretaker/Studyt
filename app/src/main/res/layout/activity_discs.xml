@@ -9,6 +9,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
+        android:id="@+id/appbar"
         android:layout_height="65dp"
         android:layout_alignParentStart="true"
         >
@@ -29,6 +30,38 @@
             android:typeface="normal"></TextView>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:id="@+id/unreal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/unreal"
+        android:minHeight="200dp"
+
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/unity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unreal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/unity"
+        android:minHeight="200dp"></ImageButton>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"

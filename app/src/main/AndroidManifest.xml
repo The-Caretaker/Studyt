@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Studyt">
         <activity
+            android:name=".activity_message"
+            android:exported="false" />
+        <activity
             android:name=".messenger"
             android:exported="false" />
         <activity
